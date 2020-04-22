@@ -1,24 +1,9 @@
-# README
+PART II
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Using Ruby on Rails, implement a simple login page which includes validation and saving to the
+database. This does not need to be completely functional but just to show how you would
+implement your code. Database will just be a sample or existing library you are using.
 
-Things you may want to cover:
+Can be run normally with `rails server` after cloning repo
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Alternatively can be run with Docker `docker run -dp 3000:3000 lorenheim/login-test`
