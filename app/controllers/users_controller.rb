@@ -8,9 +8,13 @@ class UsersController < ApplicationController
   def create
     @user = User.create(params.require(:user).permit(:username, :password))
 
-    session[:user_id] = @user.id
+    if @user.errors.any?
+      render :new
+    else
+      session[:user_id] = @user.id
 
-    redirect_to '/welcome'
+      redirect_to '/welcome'
+    end
   end
 
   def index
