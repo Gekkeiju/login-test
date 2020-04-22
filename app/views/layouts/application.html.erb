@@ -11,5 +11,10 @@
 
   <body>
     <%= yield %>
+    <% if logged_in? %>
+      <%= button_to "User List", users_path, method: :get %>
+      <%= button_to "Home", welcome_path, method: :get %>
+      <%= button_to "Logout", logout_path %>
+    <% end %>
   </body>
 </html>
