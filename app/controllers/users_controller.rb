@@ -12,5 +12,8 @@ class UsersController < ApplicationController
 
     redirect_to '/welcome'
   end
-  
+
+  def index
+    @users = User.all
+  end
 end
